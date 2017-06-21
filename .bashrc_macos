@@ -1,0 +1,15 @@
+#   MacOS-Specific Terminal Command Improvements
+#   ------------------------------------------------------------
+alias f='open -a Finder ./'                 # f:            Opens current directory in MacOS Finder
+trash () { command mv "$@" ~/.Trash ; }     # trash:        Moves a file to the MacOS trash
+ql () { qlmanage -p "$*" >& /dev/null; }    # ql:           Opens any file in MacOS Quicklook Preview
+alias DT='tee ~/Desktop/terminalOut.txt'    # DT:           Pipe content to file on MacOS Desktop
+
+
+#   Set Terminal Colors
+#   ------------------------------------------------------------
+   export CLICOLOR=1
+  # Dark terminal themes:
+    # export LSCOLORS=GxFxCxDxBxegedabagaced
+  # Light terminal themes:
+     export LSCOLORS=ExFxBxDxCxegedabagacad
