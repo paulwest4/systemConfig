@@ -8,6 +8,12 @@ case $- in
       *) return;;
 esac
 
+# set PATH so it includes user's private bin directories
+PATH="$HOME/bin:$HOME/.local/bin:$PATH"
+
+# include Linuxbrew in PATH
+[ -d /home/linuxbrew ] && PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
 HISTCONTROL=ignoreboth
