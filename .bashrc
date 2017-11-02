@@ -5,7 +5,7 @@ export PS1="\[\033[46;30m\]\u\[\033[40;97m\]@\[\033[42;30m\]\h:\[\033[103;30m\]\
 
 #   Set Default Editor
 #   ------------------------------------------------------------
-    export EDITOR=/usr/bin/vim
+export EDITOR=/usr/bin/vim
 
 
 #   General Setup
@@ -31,7 +31,9 @@ alias path='echo -e ${PATH//:/\\n}'         # path:         Echo all executable 
 alias show_options='shopt'                  # Show_options: display bash options settings
 alias fix_stty='stty sane'                  # fix_stty:     Restore terminal settings when screwed up
 alias cic='set completion-ignore-case On'   # cic:          Make tab-completion case-insensitive
+alias sizeof='du -hs'                       # sizeof:       Show the human-readable size of a file or directory
 mcd () { mkdir -p "$1" && cd "$1"; }        # mcd:          Makes new Dir and jumps inside
+alias reload='source ~/.bash_profile'       # reload:       Reload bash environment
 
 
 #   OS-Specific setup
