@@ -13,3 +13,10 @@ alias DT='tee ~/Desktop/terminalOut.txt'    # DT:           Pipe content to file
     # export LSCOLORS=GxFxCxDxBxegedabagaced
   # Light terminal themes:
      export LSCOLORS=ExFxBxDxCxegedabagacad
+
+
+#   Add Git Autocompletion
+#   ------------------------------------------------------------
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+fi
