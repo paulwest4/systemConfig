@@ -1,6 +1,6 @@
 #   Change Prompt
 #   ------------------------------------------------------------
-export PS1="\[\033[46;30m\]\u\[\033[40;97m\]@\[\033[42;30m\]\h:\[\033[103;30m\]\w\[\033[m\] >> "
+export PS1="\[\033[46;30m\]\u\[\033[40;97m\]@\[\033[42;30m\]\h:\[\033[103;30m\]\w"
 
 
 #   Set Default Editor
@@ -60,4 +60,5 @@ fi
 
 #   General setup with OS and User bindings
 #   ------------------------------------------------------------
+export PS1=$PS1"\[\033[m\] >> "
 command -v subl >/dev/null 2>&1 && alias edit='subl'   # edit:         Opens any file in sublime editor iff 'subl' is on the path

@@ -15,8 +15,12 @@ alias DT='tee ~/Desktop/terminalOut.txt'    # DT:           Pipe content to file
      export LSCOLORS=ExFxBxDxCxegedabagacad
 
 
-#   Add Git Autocompletion
+#   Add Git Tab Completion
 #   ------------------------------------------------------------
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
+fi
+if [ -f ~/.git-prompt.sh ]; then
+  source ~/.git-prompt.sh
+  export PS1=$PS1"\[\033[m\]"'$(__git_ps1 ">%s")'
 fi
