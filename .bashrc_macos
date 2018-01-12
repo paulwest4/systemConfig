@@ -24,3 +24,7 @@ if [ -f ~/.git-prompt.sh ]; then
   source ~/.git-prompt.sh
   export PS1=$PS1"\[\033[m\]"'$(__git_ps1 ">%s")'
 fi
+
+#   Add HomeBrew Tab Completion
+#   ------------------------------------------------------------
+[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
