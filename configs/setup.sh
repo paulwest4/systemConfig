@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 cd ~/configs
 git config core.worktree "../../"
 git reset --hard origin/master
