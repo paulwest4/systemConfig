@@ -34,6 +34,7 @@ alias cic='set completion-ignore-case On'   # cic:          Make tab-completion 
 alias sizeof='du -hs'                       # sizeof:       Show the human-readable size of a file or directory
 mcd () { mkdir -p "$1" && cd "$1"; }        # mcd:          Makes new Dir and jumps inside
 alias reload='source ~/.bash_profile'       # reload:       Reload bash environment
+alias gw="./gradlew"
 
 
 #   OS-Specific setup
